@@ -8,6 +8,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import TaskDetail from "./pages/TaskDetail";
+import MethodSelection from "./pages/MethodSelection";
+import TaskExecution from "./pages/TaskExecution";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +23,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/task/:taskId" element={<TaskDetail />} />
+          <Route path="/task/:taskId/select-method" element={<MethodSelection />} />
+          <Route path="/task/:taskId/execute/:methodId" element={<TaskExecution />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
