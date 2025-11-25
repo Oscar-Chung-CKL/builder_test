@@ -20,13 +20,13 @@ export function ActionCard({
   onClick,
 }: ActionCardProps) {
   const content = (
-    <div className="cursor-pointer">
-      <div className="flex items-start gap-4">
-        <div className="flex-shrink-0 text-white">{icon}</div>
-        <div className="flex-1">
-          <h3 className="heading-sm mb-2">{title}</h3>
+    <div className="cursor-pointer h-full flex flex-col">
+      <div className="flex items-start gap-4 flex-1">
+        <div className="flex-shrink-0 text-white pt-1">{icon}</div>
+        <div className="flex-1 min-w-0">
+          <h3 className="heading-sm mb-3 text-xl">{title}</h3>
           <StatusBadge status={status} className="mb-4" />
-          <p className="body-text text-foreground/80">{description}</p>
+          <p className="body-sm text-foreground/75">{description}</p>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@ export function ActionCard({
   }
 
   return (
-    <Link to={href} className="action-card block">
+    <Link to={href} className="action-card block h-full">
       {content}
     </Link>
   );
