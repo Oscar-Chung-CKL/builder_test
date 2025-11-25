@@ -7,20 +7,20 @@ export default function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Welcome Section */}
-        <div className="mb-12">
-          <h1 className="heading-xl mb-4">
+        <div className="mb-16">
+          <h1 className="heading-xl mb-6">
             Welcome to Space Travel Control Centre, <span className="font-bold">Group 1</span>
           </h1>
-          <p className="body-text text-foreground/80 max-w-2xl">
+          <p className="body-text text-foreground/75 max-w-3xl">
             It's 2030. As Cathay enters the era of space travel, this portal harnesses state-of-the-art AI tools to power safe, efficient, and innovative mission launches. Your decisions here will shape outcomes and guarantee a smooth, successful launch of our next frontier.
           </p>
         </div>
 
         {/* Pending Action Items */}
-        <div className="mb-8">
-          <h2 className="heading-md mb-8 uppercase tracking-widest text-foreground/80">
+        <div>
+          <h2 className="heading-md mb-10 uppercase tracking-widest font-semibold text-foreground/70 font-gt-walsheim">
             Pending Action Items
           </h2>
 
