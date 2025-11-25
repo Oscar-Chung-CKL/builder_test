@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "status-easy": {
+          DEFAULT: "hsl(var(--status-easy))",
+          foreground: "hsl(var(--status-easy-foreground))",
+        },
+        "status-medium": {
+          DEFAULT: "hsl(var(--status-medium))",
+          foreground: "hsl(var(--status-medium-foreground))",
+        },
+        "status-hard": {
+          DEFAULT: "hsl(var(--status-hard))",
+          foreground: "hsl(var(--status-hard-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,6 +96,10 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      fontFamily: {
+        "gt-walsheim": ["GT Walsheim", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
+        "cathay-sans": ["Cathay Sans", "-apple-system", "Roboto", "Helvetica", "sans-serif"],
       },
     },
   },
