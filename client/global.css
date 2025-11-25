@@ -145,7 +145,7 @@
   }
 
   .action-card {
-    @apply border border-border/50 bg-background rounded-lg p-6 hover:bg-secondary/20 transition-colors;
+    @apply border border-white/10 bg-background rounded-lg p-6 hover:bg-white/5 transition-colors;
   }
 
   .heading-xl {
