@@ -59,28 +59,28 @@ export default function TaskDetail() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Back link */}
         <button
           onClick={() => navigate("/")}
-          className="flex items-center gap-2 text-white hover:text-gray-300 mb-8"
+          className="flex items-center gap-2 text-foreground/80 hover:text-foreground transition-colors mb-10 font-cathay-sans text-base"
         >
           <svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" clipRule="evenodd" d="M3.56234 0.0403331L0.0800382 2.65057C-0.0266794 2.73057 -0.0266794 2.89063 0.0800382 2.97063L3.56234 5.58087C3.6942 5.6797 3.88229 5.58563 3.88229 5.42085V3.56313H19.8C19.9105 3.56313 20 3.47359 20 3.36314V2.25808C20 2.14762 19.9105 2.05809 19.8 2.05809H3.88229V0.200369C3.88229 0.0355732 3.6942 -0.0585046 3.56234 0.0403331Z" fill="white"/>
+            <path fillRule="evenodd" clipRule="evenodd" d="M3.56234 0.0403331L0.0800382 2.65057C-0.0266794 2.73057 -0.0266794 2.89063 0.0800382 2.97063L3.56234 5.58087C3.6942 5.6797 3.88229 5.58563 3.88229 5.42085V3.56313H19.8C19.9105 3.56313 20 3.47359 20 3.36314V2.25808C20 2.14762 19.9105 2.05809 19.8 2.05809H3.88229V0.200369C3.88229 0.0355732 3.6942 -0.0585046 3.56234 0.0403331Z" fill="currentColor"/>
           </svg>
-          <span className="body-text">Back to Home</span>
+          <span>Back to Home</span>
         </button>
 
         {/* Task Header */}
-        <div className="mb-12">
-          <div className="flex items-start gap-4 mb-6">
-            <div className="flex-shrink-0 text-white">{task.icon}</div>
-            <div className="flex-1">
-              <div className="flex items-baseline gap-4 mb-4">
+        <div className="mb-16">
+          <div className="flex items-start gap-6 mb-6">
+            <div className="flex-shrink-0 text-white pt-1">{task.icon}</div>
+            <div className="flex-1 min-w-0">
+              <div className="flex flex-wrap items-baseline gap-4 mb-4">
                 <h1 className="heading-lg">{task.title}</h1>
                 <StatusBadge status={task.status} />
               </div>
-              <p className="body-text text-foreground/80">
+              <p className="body-text text-foreground/75">
                 {task.description}
               </p>
             </div>
@@ -88,8 +88,8 @@ export default function TaskDetail() {
         </div>
 
         {/* Task Content Container */}
-        <div className="border border-border bg-card rounded-lg p-8">
-          <p className="body-text text-foreground/80 mb-6">
+        <div className="border border-border/50 bg-background rounded-lg p-8 md:p-12">
+          <p className="body-text text-foreground/75 mb-8 leading-relaxed">
             {task.taskDescription}
           </p>
 
