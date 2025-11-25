@@ -93,7 +93,10 @@ export default function TaskDetail() {
             {task.taskDescription}
           </p>
 
-          <button className="btn-primary">
+          <button
+            onClick={() => navigate(`/task/${taskId}/select-method`)}
+            className="btn-primary"
+          >
             {task.buttonLabel}
           </button>
         </div>
